@@ -1,0 +1,27 @@
+{
+  "name": "codepen-bot",
+  "version": "1.0.0",
+  "description": "An unofficial Codepen bot to do awesome things with Codepen.",
+  "main": "src/bot.js",
+  "scripts": {
+    "create": "claudia create --region us-west-2 --api-module bin/bot",
+    "deploy" : "claudia update",
+    "test" : "claudia test-lambda —event ./testdata/basicTest.json",
+    "configure-slack":"claudia update --configure-slack-slash-app"
+  },
+  "keywords": [
+    "slackbot",
+    "codepen",
+    "customslashcommand"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shashank7200/Codepen-Bot.git"
+  },
+  "homepage": "https://github.com/shashank7200/Codepen-Bot#readme",
+  "author": "Shashank Shekhar",
+  "license": "ISC",
+  "dependencies": {
+    "claudia-bot-builder": "^2.15.0"
+  }
+}
