@@ -1,0 +1,11 @@
+{
+  "lambda": {
+    "role": "codepenbot-executor",
+    "name": "codepenbot",
+    "region": "us-west-2"
+  },
+  "api": {
+    "id": "0wpa8zs5z7",
+    "module": "bin/bot"
+  }
+}
