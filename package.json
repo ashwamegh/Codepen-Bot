@@ -5,9 +5,9 @@
   "main": "src/bot.js",
   "scripts": {
     "create": "claudia create --region us-west-2 --api-module bin/bot",
-    "deploy" : "claudia update",
-    "test" : "claudia test-lambda —event ./testdata/basicTest.json",
-    "configure-slack":"claudia update --configure-slack-slash-app"
+    "deploy": "claudia update",
+    "test": "claudia test-lambda —event ./testdata/basicTest.json",
+    "configure-slack": "claudia update --configure-slack-slash-app"
   },
   "keywords": [
     "slackbot",
@@ -22,6 +22,11 @@
   "author": "Shashank Shekhar",
   "license": "ISC",
   "dependencies": {
-    "claudia-bot-builder": "^2.15.0"
+    "claudia-bot-builder": "^2.15.0",
+    "request": "^2.81.0",
+    "request-promise": "^4.2.1"
+  },
+  "devDependencies": {
+    "claudia": "^2.12.1"
   }
 }
