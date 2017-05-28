@@ -5,6 +5,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
+# Bot Info
+
+bot_info.txt
+
 # Runtime data
 pids
 *.pid
